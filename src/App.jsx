@@ -9,7 +9,7 @@ const App = () => (
         <Hero />
     </div>
     
-    <div className={` bg-primary   sm:bg-about-pattern my-10 bg-Contain lg:bg-aboutus-pattern 
+    <div className={` bg-primary   sm:bg-about-pattern ss:my-[32vh] sm:my-[2vh] my-[15vh] bg-Contain lg:bg-aboutus-pattern 
     bg-no-repeat ${styles.paddingX} ${styles.flexCenter}`}>
       <div >
         <Content />

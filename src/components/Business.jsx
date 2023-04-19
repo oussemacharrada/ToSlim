@@ -8,7 +8,7 @@ import { plane,aboutus, Team2,
   Team6,Team1} from "../assets";
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px]  my-4  feature-card cardBack h-[280px] max-w-[525px] `}>
+  <div className={`flex flex-row p-6 rounded-[20px]  my-4  feature-card cardBack xs:h-[40vh] ss:h-[250px] h-[60vh] max-w-[525px] `}>
     <div className={`w-[64px] h-[64px] rounded-full  ${styles.flexCenter} bg-red-800 text-gray-700	`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain text-gray-700 fill-white		" />
     </div>
@@ -31,7 +31,7 @@ export const Content = () => {
     <div className={layout.section}>
     <div class="flex items-center flex-wrap mb-10">
       <div class="w-full md:w-1/2 px-4">
-        <h1 class="text-3xl text-gray-800 font-bold mb-3 text-gradient">
+        <h1 class="text-3xl text-gray-800 font-bold mb-3 darkheader">
           Our History
         </h1>
         <p class="text-gray-600 mb-8">
@@ -45,7 +45,7 @@ export const Content = () => {
     </div>
     <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
         <div class="w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4 text-gradient my-2 mb-8">Mission And Vision</h1>
+            <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4 darkheader my-2 mb-8">Mission And Vision</h1>
         </div>
     
     </div>
@@ -56,7 +56,7 @@ export const Content = () => {
         </div>
       <div class="flex lg:flex-row w-full flex-col justify-between gap-8 pt-12">
         <div class="w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4 text-gradient">Our Team</h1>
+            <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4 darkheader">Our Team</h1>
         </div>
     
     </div>

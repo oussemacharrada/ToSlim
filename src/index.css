@@ -23,6 +23,36 @@ box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.25);
 border-radius: 10px;  
 
 }
+.darkheader{
+  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 140%;
+/* identical to box height, or 56px */
+
+letter-spacing: 0.01em;
+
+background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #D53444 0.89%, #CB2A3A 55.12%, rgba(152, 31, 43, 0.98) 71.54%, #771821 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+.btntext{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* or 27px */
+
+text-transform: capitalize;
+
+color: #FBE6DF;
+}
 .cardBack{
   background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -396.41%, rgba(20, 16, 29, 0.8) 40.64%);  box-shadow: 0px 20px 100px rgba(66, 71, 91, 0.1);
   border-radius: 20px;
@@ -55,15 +85,8 @@ letter-spacing: 0.01em;
 }
 
 .bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
-  );
+  background: linear-gradient(157.81deg, #AB4C4C -43.27%, rgba(187, 45, 45, 0.79) 90.29%);
+border-radius: 10px;
 }
 
 .bg-black-gradient {
