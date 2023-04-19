@@ -5,15 +5,13 @@ const App = () => (
   <div className="bg-primary w-full overflow-hidden">
  
 
-    <div className={`bg-primary mt-0 pt-0  bg-hero-pattern w-full h-full object-cover  ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-      <Navbar />
+    <div className={`bg-primary mt-0 pt-0   w-full h-full object-cover  ${styles.flexStart}`}>
         <Hero />
-      </div>  
     </div>
     
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className={` bg-primary   sm:bg-about-pattern my-10 bg-Contain lg:bg-aboutus-pattern 
+    bg-no-repeat ${styles.paddingX} ${styles.flexCenter}`}>
+      <div >
         <Content />
         <Billing />
         <CardDeal />

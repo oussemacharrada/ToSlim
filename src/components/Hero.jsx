@@ -1,5 +1,8 @@
 import styles from "../style";
 import { stats } from "../constants";
+import Swipe from "react-easy-swipe";
+import React, { Component } from "react";
+import { Navbar,Clients } from "./../components";
 
 import {   USAIDLogo,
   UTICALogo,
@@ -12,21 +15,101 @@ import {   USAIDLogo,
   eclipse2,
   eclipse3 } from "../assets";
 import GetStarted from "./GetStarted";
+ const CarouselData = [
+  {
+    image: "./src/assets/heroBackground.png",
+  },
+  {
+    image: "./src/assets/herobg2.png",
+  },
+  {
+    image: "./src/assets/herobg3.png",
+  },
+];
+class Hero extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSlide: 0,
+      paused: false,
+    };
+  }
 
-const Hero = () => {  
-  return (
-    <section id="home" className={` `}  >
-        
-        <div className="max-w-[1080px] mx-auto">
-        <div className={`flex md:flex-row flex-col p-0 ${styles.paddingY} 	`  }>
-    <div className={`flex-1 flex ${styles.flexCenter} basis-1/4 md:my-0 my-5 relative`}>
+  componentDidMount() {
+    setInterval(() => {
+      if (this.state.paused === false) {
+        let newSlide =
+          this.state.currentSlide === CarouselData.length - 1
+            ? 0
+            : this.state.currentSlide + 1;
+        this.setState({ currentSlide: newSlide });
+      }
+    }, 5000);
+  }
+
+  nextSlide = () => {
+    let newSlide =
+      this.state.currentSlide === CarouselData.length - 1
+        ? 0
+        : this.state.currentSlide + 1;
+    this.setState({ currentSlide: newSlide });
+  };
+
+  prevSlide = () => {
+    let newSlide =
+      this.state.currentSlide === 0
+        ? CarouselData.length - 1
+        : this.state.currentSlide - 1;
+    this.setState({ currentSlide: newSlide });
+  };
+
+  setCurrentSlide = index => {
+    this.setState({ currentSlide: index });
+  };
+
+  render() {
+    return (
+      <div className="w-full  object-cover	 bg-[url('./src/assets/aboutusbackground.png')]">
+        <div className="absolute inset-x-0 bottom-0 h-1/2" />
+        <div className="max-w-9xl mx-auto">
+          <div className="relative sm:overflow-hidden">
+            <div className="absolute inset-0">
+              <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
+                {CarouselData.map((slide, index) => {
+                  return (
+                    <img
+                      src={slide.image}
+                      alt="wall"
+                      key={index}
+                      className={
+                        index === this.state.currentSlide
+                          ? "w-full sm:h-[100vh] ss:h-[80vh] h-[85vh]   object-cover bg-cover  "
+                          : "hidden"
+                      }
+                      onMouseEnter={() => {
+                        this.setState({ paused: true });
+                      }}
+                      onMouseLeave={() => {
+                        this.setState({ paused: false });
+                      }}
+                    />
+                  );
+                })}
+              </Swipe>
+              <div className="absolute inset-0  mix-blend-multiply" />
+            </div>
+            <div className="relative">
+              <Navbar />
+            <div className="max-w-[1080px] mx-auto">
+        <div className={`flex md:flex-row flex-col p-0 	`  }>
+    <div className={`flex-1 flex  md:my-0 my-5 relative`}>
       
     </div>
-    <div className={`flex-1 ${styles.flexStart} basis-1/2 flex-col xl:px-0 sm:px-16 px-6 `}>
-      <div className="w-full h-full object-cover backdrop-blur-sm p-7 pl-12 block rounded-lg shadow-lg px-6 py-12 md:px-12  glassifedEffectBlur 	" style={{ maxWidth: "1080px" }}>
+    <div className={`flex-1 ${styles.flexStart}  flex-col xl:px-0 sm:px-16 px-6 mb-2 `}>
+      <div className="w-full h-full object-cover backdrop-blur-sm p-5 pl-10 block rounded-lg shadow-lg px-4 py-10 md:px-10  glassifedEffectBlur 	" >
         <div className='flex flex-row justify-between items-center w-full'>
-          <h1 className="flex-1 font-poppins font-semibold ss:etxt-[52px] text-[52px] text-white ss:leading-[60.8px] leading-[52.8px]">
-            Exciting Events Across All Tunisia With <br className="sm:block hidden" />{" "}
+          <h1 className="flex-1 font-poppins font-semibold ss:etxt-[3vw] text-[3vw] text-white ss:leading-[3.4vw] leading-[3vw]">
+            Exciting Events Across All Tunisia With <br />{" "}
             <span className="text-gradient">Kepler!</span>{" "}
           </h1>  
         </div>
@@ -38,49 +121,39 @@ const Hero = () => {
   </div>
 
 
-  <div className="container px-7 py-3  mx-auto">
-    <div className="flex flex-wrap -m-2 justify-center">
-      <div className="p-2">
-        <img src={eclipse1} className="title-font font-medium sm:text-4xl text-3xl text-gray-900"></img>
-      </div>
-      <div className="p-2">
-        <img src={eclipse2}></img>
-      </div>
-      <div className="p-2">
-        <img src={eclipse3}></img>
-      </div>
+  <div className="container px-7   mx-auto mt-4">  
+      <div className="flex flex-wrap -m-2 justify-center">
+
+  {CarouselData.map((element, index) => {
+                return (
+                  <div className="p-2">
+                  <img src={eclipse2} 
+                    className={
+                      index === this.state.currentSlide
+                        ? "  w-100 bg-red-700 rounded-full mx-2 mb-2 cursor-pointer"
+                        : "  w-100 hover:bg-white rounded-full mx-2 mb-2 cursor-pointer"
+                    }
+                    key={index}
+                    onClick={() => {
+                      this.setCurrentSlide(index);
+                    }}
+                  ></img>
+                     </div>
+                );
+              })}
+  
     </div>
   </div>
 
-  <div className="container px-7 py-3 mx-auto">
-    <div className="flex flex-wrap -m-2 justify-center">
-      <div className="p-2">
-        <img src={UTICALogo} className="title-font font-medium sm:text-4xl text-3xl text-gray-900"></img>
-      </div>
-      <div className="p-2">
-        <img src={ma3anLogo}></img>
-      </div>
-      <div className="p-2">
-        <img src={USAIDLogo}></img>
-      </div>
-      <div className="p-2">
-        <img src={FRIEDRICHLogo}></img>
-      </div>
-      <div className="p-2">
-        <img src={fhiLogo}></img>
-      </div>
-      <div className="p-2">
-        <img src={FAOLogo}></img>
-      </div>
-      <div className="p-2">
-        <img src={CFADLogo}></img>
-      </div>
-    </div>
-  </div>
+  <Clients />
 </div>
 
-    </section>
-  );
-};
-
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 export default Hero;
