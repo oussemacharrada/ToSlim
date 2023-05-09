@@ -13,7 +13,13 @@
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
-
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
 * {
   scroll-behavior: smooth;
 }
@@ -23,13 +29,151 @@ box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.25);
 border-radius: 10px;  
 
 }
+.traveltitle{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+
+/* or 58px */
+
+letter-spacing: 0.02em;
+
+color: #F4EAEA;
+}
+.travelp{
+  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+/* or 200% */
+
+
+color: #FBEAEA;
+}
+.header1{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+line-height: 180%;
+/* identical to box height, or 36px */
+
+letter-spacing: 0.02em;
+
+}
+
+.whiteheader{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+/* or 102px */
+
+text-align: center;
+
+color: #FEF9F9;
+}
+.redtitle{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+
+/* identical to box height */
+
+
+color: #BB2D2D;
+}
+.input{
+  border: 1px solid #FFFFFF;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 171% */
+background-color: #BCBCBD;
+letter-spacing: 0.01em;
+
+/* Gray 3 */
+
+color: #828282;
+
+}
+.paragraph3{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.01em;
+
+color: #000000;
+}
+.blacktitle{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+
+/* identical to box height */
+
+
+color: #020202;
+}
+.whitetitle{
+  font-style: normal;
+font-weight: 800;
+line-height: 120%;
+/* or 48px */
+
+
+color: #FFFFFF;
+}
+.submitBtn{
+  background: rgba(152, 31, 43, 0.98);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  text-transform: uppercase;
+  
+  /* white */
+  
+  color: #FFFFFF;
+}
+.imgeffect{ 
+  box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.25);}
+.paragraph1{
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 155%;
+
+
+}
+.paragraph2{
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  /* or 133% */
+  
+  
+  color: #FBEAEA;
+}
 .darkheader{
   
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
-font-size: 40px;
-line-height: 140%;
+
 /* identical to box height, or 56px */
 
 letter-spacing: 0.01em;
@@ -67,7 +211,6 @@ color: #FBE6DF;
   font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
-font-size: 5vw;
 line-height: 140%;
 /* or 98px */
 

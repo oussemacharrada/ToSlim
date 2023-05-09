@@ -1,23 +1,26 @@
 import Navbar from "./Navbar";
-import Billing from "./Billing";
-import CardDeal from "./CardDeal";
-import Content from "./Business";
-import Clients from "./Clients";
+import Services from "./Services";
+import Events from "./Events";
+import AboutUs from "./AboutUs";
+import Sponsers from "./Sponsers";
 import CTA from "./CTA";
 import Stats from "./Stats";
 import Footer from "./Footer";
-import Testimonials from "./Testimonials";
+import ContactUs from "./ContactUs";
 import Hero from "./Hero";
-
+import Team from "./Team"
+import Travel from "./Travel"
 export {
+  Travel,
   Navbar,
-  Billing,
-  CardDeal,
-  Content,
-  Clients,
+  Services,
+  Events,
+  AboutUs,
+  Sponsers,
   CTA,
   Stats,
   Footer,
-  Testimonials,
+  ContactUs,
   Hero,
+  Team
 };

@@ -8,7 +8,7 @@ import {   USAIDLogo,
   FAOLogo,
   CFADLogo
  } from "../assets";
-const Clients = () => (
+const Sponsers = () => (
   <section className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
       {clients.map((client) => (
@@ -20,4 +20,4 @@ const Clients = () => (
   </section>
 );
 
-export default Clients;
+export default Sponsers;

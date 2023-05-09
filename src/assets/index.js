@@ -43,9 +43,26 @@ import Team3 from "./Team3.png";
 import Team4 from "./Team4.png";
 import Team5 from "./Team5.png";
 import Team6 from "./Team6.png";
+import EVENT from "./EVENT.png";
+import EVENT1 from "./EVENT1.png";
+import EVENT2 from "./EVENT2.png";
+import EVENT3 from "./EVENT3.png";
+import EVENT4 from "./EVENT4.png";
+import EVENT5 from "./EVENT5.png";
+import TRAVELBAG from "./TRAVELBAG.png";
+import Location1 from "./Location1.png";
+import Location2 from "./Location2.png";
+import Location3 from "./Location3.png";
 
 
-export {Team1,
+
+
+export {
+  Location1,
+  Location2,
+  Location3,
+  TRAVELBAG,
+  EVENT, EVENT1,EVENT2,EVENT3,EVENT4,EVENT5,Team1,
   Team2,
   Team3,
   Team4,

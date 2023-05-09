@@ -2,7 +2,7 @@ import styles from "../style";
 import { stats } from "../constants";
 import Swipe from "react-easy-swipe";
 import React, { Component } from "react";
-import { Navbar,Clients } from "./../components";
+import { Navbar, Sponsers } from "./../components";
 import Button from "./Button";
 
 import {   USAIDLogo,
@@ -70,9 +70,9 @@ class Hero extends Component {
 
   render() {
     return (
-      <div className="w-full  object-cover	 bg-[url('./src/assets/aboutusbackground.png')]">
+      <div className="w-full object-cover bg-[url('./src/assets/aboutusbackground.png')]	">
         <div className="absolute inset-x-0 bottom-0 h-1/2" />
-        <div className="max-w-9xl mx-auto">
+        <div className="max-w-9xl mx-auto]">
           <div className="relative sm:overflow-hidden">
             <div className="absolute inset-0  ">
               <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
@@ -84,9 +84,10 @@ class Hero extends Component {
                       key={index}
                       className={
                         index === this.state.currentSlide
-                          ? "w-full h-[100vh]   object-cover bg-cover  "
+                          ? "w-full  absolute top-0 left-0 w-full h-full z-0 object-cover "
                           : "hidden"
                       }
+                      style={{ objectFit: "cover" }}
                       onMouseEnter={() => {
                         this.setState({ paused: true });
                       }}
@@ -109,21 +110,21 @@ class Hero extends Component {
     <div className={`flex-1 ${styles.flexStart}  flex-col xl:px-0 sm:px-16 px-6 mb-2 `}>
       <div className="w-full h-full object-cover backdrop-blur-sm p-5 pl-10 block rounded-lg shadow-lg px-4 py-10 md:px-10  glassifedEffectBlur 	" >
         <div className='flex flex-row justify-between items-center w-full'>
-          <h1 className="flex-1 font-poppins font-semibold  ss:text-[3.5vw] lg:text-[2.2vw] text-[4.4vw] text-white ss:leading-[3.8vw] lg:leading-[2.3vw]  leading-[4.8vw]">
+          <h1 className="flex-1 font-poppins font-semibold  ss:text-[2rem] text-[1.5rem]  text-white ss:leading-[2.1rem]   leading-[1.8rem]">
             Exciting Events Across All Tunisia With <br />{" "}
             <span className="text-gradient">Kepler!</span>{" "}
           </h1>  
         </div>
-        <p className={`${styles.paragraph} max-w-[570px] mt-5 ss:text-[2.5vw] lg:text-[1.2vw] text-[3.4vw] text-white ss:leading-[2.8vw] lg:leading-[1.3vw]  leading-[3.8vw]`}>
+        <p className={`${styles.paragraph} max-w-[570px] mt-5 ss:text-[1.9rem] ] text-[1.5rem] text-white ss:leading-[2.1rem]   leading-[1.8rem]`}>
           Welcome to Kepler, your gateway to unforgettable travel experiences and exciting events. Our travel agency is passionate about curating the perfect Event package tailored to your interests. 
         </p>
-        <Button styles={`mt-10`} />
+        <Button styles={`mt-10 align-middle	`} />
 
       </div>
     </div>
   </div>
 
-
+                
   <div className="container px-7   mx-auto mt-4">  
       <div className="flex flex-wrap -m-2 justify-center">
 
@@ -148,7 +149,7 @@ class Hero extends Component {
     </div>
   </div>
 
-  <Clients />
+  <Sponsers />
 </div>
 
             </div>

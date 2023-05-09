@@ -7,7 +7,17 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('./src/assets/heroBackground.png')",
         'aboutus-pattern': "url('./src/assets/aboutusbackground.png')",
-        'about-pattern': "url('./src/assets/abtbg2.png')"
+        'about-pattern': "url('./src/assets/abtbg2.png')",
+        'event-pattern': "url('./src/assets/EVENT.png')",
+        'event1-pattern': "url('./src/assets/EVENT1.png')",
+        'event2-pattern': "url('./src/assets/EVENT2.png')",
+        'event3-pattern': "url('./src/assets/EVENT3.png')",
+        'event4-pattern': "url('./src/assets/EVENT4.png')",
+        'event5-pattern': "url('./src/assets/EVENT5.png')",
+        'travel-pattern' : "url('./src/assets/travelbg.png')",
+        'location-pattern' : "url('./src/assets/Location1.png')",
+        'Terminal-pattern' : "url('./src/assets/Terminal1.png')"
+
 
        },
       colors: {

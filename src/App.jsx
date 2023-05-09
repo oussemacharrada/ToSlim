@@ -1,22 +1,36 @@
 import styles from "./style";
-import { Billing, Content, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import {   Navbar,
+  Services,
+  Events,
+  AboutUs,
+  Sponsers,
+  CTA,
+  Stats,
+  Footer,
+  ContactUs,
+  Hero,
+  Team ,Travel} from "./components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
- 
-
-    <div className={`bg-primary mt-0 pt-0   w-full h-full object-cover  ${styles.flexStart}`}>
         <Hero />
-    </div>
+
+
     
-    <div className={` bg-primary   sm:bg-about-pattern ss:my-[32vh] sm:my-[2vh] my-[15vh] bg-Contain lg:bg-aboutus-pattern 
-    bg-no-repeat ${styles.paddingX} ${styles.flexCenter}`}>
-      <div >
-        <Content />
-        <Billing />
-        <CardDeal />
-        <Testimonials />
-        <Clients />
+    <div className={`bg-primary bg-aboutus-pattern bg-no-repeat w-full   w-[100vw] h-full z-0 object-cover	 ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <AboutUs />
+        <Events /></div></div>
+          
+    <div className={`bg-primary sm:bg-travel-pattern bg-Terminal-pattern w-[100vw] bg-cover bg-no-repeat bg-center bg-fixed ${styles.paddingX} ${styles.flexCenter}`}>
+    
+        <Travel />
+</div>
+        <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Services />
+        <ContactUs />
+        <Sponsers />
         <CTA />
         <Footer />
       </div>
