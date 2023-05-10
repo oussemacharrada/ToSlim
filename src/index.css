@@ -40,6 +40,15 @@ letter-spacing: 0.02em;
 
 color: #F4EAEA;
 }
+.learnmorebtn{
+  background: none;
+  border: 1px solid;
+  transition: .3s background, .3s color, .3s border;
+}
+.learnmorebtn:hover {
+  background: #fff;
+  color: #000;
+}
 .travelp{
   
 font-family: 'Poppins';
@@ -111,14 +120,16 @@ letter-spacing: 0.01em;
 color: #000000;
 }
 .blacktitle{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-
-/* identical to box height */
-
-
-color: #020202;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 170%;
+  /* or 136px */
+  
+  
+  color: #424147;
+  
 }
 .whitetitle{
   font-style: normal;
@@ -184,6 +195,27 @@ background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #D53444 0.89%, #CB2A
 background-clip: text;
 text-fill-color: transparent;
 
+}
+.videoTexture{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  /* or 34px */
+  
+  
+  color: #513125;
+}
+.dateTexture{
+  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 26px;
+
+color: #99232F;
 }
 .btntext{
   font-family: 'Poppins';

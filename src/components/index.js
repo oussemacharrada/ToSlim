@@ -10,6 +10,8 @@ import ContactUs from "./ContactUs";
 import Hero from "./Hero";
 import Team from "./Team"
 import Travel from "./Travel"
+import EventsVids from "./EventVids";
+import DreamToDestination from "./DreamToDestination"
 export {
   Travel,
   Navbar,
@@ -22,5 +24,6 @@ export {
   Footer,
   ContactUs,
   Hero,
-  Team
+  Team,
+  EventsVids,DreamToDestination
 };

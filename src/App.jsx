@@ -9,7 +9,7 @@ import {   Navbar,
   Footer,
   ContactUs,
   Hero,
-  Team ,Travel} from "./components";
+  Team ,Travel, EventsVids,DreamToDestination} from "./components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -20,15 +20,19 @@ const App = () => (
     <div className={`bg-primary bg-aboutus-pattern bg-no-repeat w-full   w-[100vw] h-full z-0 object-cover	 ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <AboutUs />
-        <Events /></div></div>
+        <Events />
+        <EventsVids />
+        <DreamToDestination /> 
+        </div></div>
           
-    <div className={`bg-primary sm:bg-travel-pattern bg-Terminal-pattern w-[100vw] bg-cover bg-no-repeat bg-center bg-fixed ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`bg-primary sm:bg-travel-pattern bg-Terminal-pattern w-[100vw] bg-cover bg-no-repeat bg-center bg-fixed  z-0 object-cover${styles.paddingX} ${styles.flexCenter}`}>
     
         <Travel />
 </div>
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Services />
+        
         <ContactUs />
         <Sponsers />
         <CTA />

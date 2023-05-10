@@ -16,10 +16,14 @@ module.exports = {
         'event5-pattern': "url('./src/assets/EVENT5.png')",
         'travel-pattern' : "url('./src/assets/travelbg.png')",
         'location-pattern' : "url('./src/assets/Location1.png')",
-        'Terminal-pattern' : "url('./src/assets/Terminal1.png')"
+        'Terminal-pattern' : "url('./src/assets/Terminal1.png')",
+        'maplocation-pattern' :"url('./src/assets/maplocation.png')"
 
 
        },
+       borderWidth: {
+        '16': '16px',
+      },
       colors: {
         primary: "#BCBCBD",
         

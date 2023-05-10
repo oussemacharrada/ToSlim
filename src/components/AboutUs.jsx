@@ -10,19 +10,24 @@ import { plane,aboutus, Team2,
 
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px]  my-4  feature-card cardBack xs:h-[40vh] ss:h-[250px] h-[60vh] max-w-[525px] `}>
-    <div className={`w-[64px] h-[64px] rounded-full  ${styles.flexCenter} bg-red-800 text-gray-700	`}>
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain text-gray-700 fill-white		" />
-    </div>
-    <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
-        {title}
-      </h4>
-      <p className="font-poppins font-normal text-white text-[16px] leading-[24px]">
-        {content}
-      </p>
+<div className={`flex flex-row p-6 rounded-[20px] z-0 object-cover my-4 feature-card cardBack xs:h-auto ss:h-[300px] h-auto max-w-[525px]`}>
+  <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-red-800 text-gray-700`}>
+    <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain text-gray-700 fill-white" />
+  </div>
+  <div className="flex-1 flex flex-col ml-3">
+    <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+      {title}
+    </h4>
+    <p className="font-poppins font-normal text-white text-[16px] leading-[24px]">
+      {content}
+    </p>
+    <div className="mt-auto">
+      <button className="learnmorebtn text-white px-10 py-1 h-10 2">Learn more</button>
     </div>
   </div>
+</div>
+
+  
 );
 
 export const AboutUs = () => {

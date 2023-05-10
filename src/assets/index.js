@@ -53,11 +53,14 @@ import TRAVELBAG from "./TRAVELBAG.png";
 import Location1 from "./Location1.png";
 import Location2 from "./Location2.png";
 import Location3 from "./Location3.png";
+import CriseSanté from "./CriseSanté.mp4"
+import gizVideoThumbnail from "./gizVideoThumbnail.png"
 
 
 
 
 export {
+  gizVideoThumbnail,CriseSanté,
   Location1,
   Location2,
   Location3,

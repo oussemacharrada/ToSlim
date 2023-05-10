@@ -84,7 +84,7 @@ class Hero extends Component {
                       key={index}
                       className={
                         index === this.state.currentSlide
-                          ? "w-full  absolute top-0 left-0 w-full h-full z-0 object-cover "
+                          ? "w-full  absolute top-0 left-0 w-full h-full z-0 object-cover min-h-[100vh]"
                           : "hidden"
                       }
                       style={{ objectFit: "cover" }}

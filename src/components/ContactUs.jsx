@@ -26,14 +26,15 @@ const ContactUs = () => (
       <button className="text-white  border-0 py-3 px-6 focus:outline-none hover:bg-red-800  text-lg submitBtn">Send</button>
 
     </div>
-    <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg min-h-[200px] sm:mr-10 p-10 flex items-end justify-start relative m-10">
-      <iframe width="100%" height="100%" className="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" vnb-frameid="2138" ></iframe>
-      <div className="bg-[#423F49]  relative flex flex-wrap py-6 ml-16 -mb-28 min-w-[2rem]       shadow-md">
-        <div className="lg:w-5/6 px-6">
-          <h1 className="title-font whitetitle font-semibold text-white  tracking-widest  text-xs">Location<br></br> Found<span className="redtitle"> Kepler !</span></h1>
-    
-        </div>
-       
+    <div className="w-full  lg:w-2/3 md:w-full  p-4 sm:mr-20 p-10     ">
+    <div className="flex flex-col justify-center items-center max-w-sm mx-auto my-8">
+  <div className={`bg-gray-300 h-96 w-full   shadow-md bg-cover bg-blend-normal	 bg-center bg-maplocation-pattern imgeffect`}></div>
+  <div className="w-80 md:w-80 bg-[#423F49] h-32  -mt-20 shadow-lg overflow-hidden px-1 pb-20	">
+    <div className="py-4  p-6">
+    <h1 className="title-font whitetitle font-semibold text-white  tracking-widest  text-xs">Location<br></br> Found<span className="redtitle"> Kepler !</span></h1>
+
+  </div>
+</div> 
       </div>
     </div>
   </div>  
