@@ -1,5 +1,5 @@
 import styles from "../style";
-import {whitelogo, email, maps} from "../assets";
+import {whitelogo, email, maps , mapmarker , phone} from "../assets";
 import {footerLinks, socialMedia} from "../constants";
 
 const Footer = () => (
@@ -65,8 +65,8 @@ const Footer = () => (
                         className={`w-64 h-auto mt-5 mx-2 rounded-lg object-contain `}/>
                     <div className="flex flex-row">
                         <img
-                            src={email}
-                            alt="Email"
+                            src={mapmarker}
+                            alt="mapmarker"
                             className={`w-4 h-4 mt-5 mx-2 rounded-lg object-contain `}/>
                         <h6 className={`${styles.paragraph} mt-4 `}> Bureau 308 Megrine
  Business Center, Route Z4 Saint 
@@ -74,8 +74,8 @@ Gobain 2033 Megrine - Tunisie</h6>
                     </div>
                     <div className="flex flex-row">
                         <img
-                            src={email}
-                            alt="Email"
+                            src={phone}
+                            alt="phone"
                             className={`w-4 h-4 mt-5 mx-2 rounded-lg object-contain `}/>
                         <h6 className={`${styles.paragraph} mt-4 `}> (+216) 79 29 75 38</h6>
                     </div>

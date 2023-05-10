@@ -50,7 +50,14 @@ color: #F4EAEA;
   color: #000;
 
 }
+.filter-black{
+  filter: invert(0%) sepia(2%) saturate(8%) hue-rotate(346deg) brightness(101%) contrast(102%);
+fill: black;
 
+}
+.filter-green{
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
 .icontran{
   background: none;
   border: 1px solid white;

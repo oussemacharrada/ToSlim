@@ -12,7 +12,7 @@ const DreamToDestination = () => (
                 className=" w-2/3 h-80  sm:h-48 lg:h-80 ilg:h-96 mt-10 -mr-0 sm:-mr-20  object-cover  bg-[#424147]  z-10">
                 <div className="py-4 p-6 ">
                     <h1
-                        className="header1 pb-5 text-white whiteheader  h-text-lg sm:h-text-xl lg:h-text-2xl ilg:text-3xl   shadow-lg  ">
+                        className="header1 pb-5 text-white whiteheader  text-lg sm:h-text-xl lg:h-text-2xl ilg:text-3xl   shadow-lg  ">
                         <span className="text-gradient">Kepler!</span>
                         <br></br>
                         From dream destinations to unforgettable events!
