@@ -42,12 +42,24 @@ color: #F4EAEA;
 }
 .learnmorebtn{
   background: none;
-  border: 1px solid;
+  border: 1px solid white;
   transition: .3s background, .3s color, .3s border;
 }
 .learnmorebtn:hover {
   background: #fff;
   color: #000;
+
+}
+
+.icontran{
+  background: none;
+  border: 1px solid white;
+  transition: .3s background, .3s color, .3s border;
+}
+.icontran:hover {
+  background: #f5f4f43a;
+  color: #000;
+
 }
 .travelp{
   

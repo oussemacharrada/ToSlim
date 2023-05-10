@@ -13,17 +13,18 @@ import Travel from "./Travel"
 import EventsVids from "./EventVids";
 import DreamToDestination from "./DreamToDestination"
 export {
-  Travel,
-  Navbar,
-  Services,
-  Events,
-  AboutUs,
-  Sponsers,
-  CTA,
-  Stats,
-  Footer,
-  ContactUs,
-  Hero,
-  Team,
-  EventsVids,DreamToDestination
+    Travel,
+    Navbar,
+    Services,
+    Events,
+    AboutUs,
+    Sponsers,
+    CTA,
+    Stats,
+    Footer,
+    ContactUs,
+    Hero,
+    Team,
+    EventsVids,
+    DreamToDestination
 };

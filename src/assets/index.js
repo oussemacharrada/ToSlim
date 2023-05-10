@@ -55,11 +55,17 @@ import Location2 from "./Location2.png";
 import Location3 from "./Location3.png";
 import CriseSanté from "./CriseSanté.mp4"
 import gizVideoThumbnail from "./gizVideoThumbnail.png"
+import whitelogo from "./whitelogo.png"
+import email from "./email.png"
+import maps from "./maps.png"
+import phone from "./phone.png"
+import mapmarker from "./mapmarker.png"
 
 
 
-
-export {
+export {mapmarker,phone,maps,
+  email,
+  whitelogo,
   gizVideoThumbnail,CriseSanté,
   Location1,
   Location2,
