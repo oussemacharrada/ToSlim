@@ -55,7 +55,7 @@ color: #F4EAEA;
 fill: black;
 
 }
-.filter-green{
+.filtergreen{
   filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 .icontran{
@@ -253,7 +253,7 @@ color: #FBE6DF;
   border-radius: 20px;
 }
 .glassifedEffectBlur{
-  background: rgba(217, 217, 217, 0.25);
+  background: rgba(0, 0, 0, 0.507);
   backdrop-filter: blur(4px);
   
   border-radius: 10px;

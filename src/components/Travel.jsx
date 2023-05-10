@@ -12,7 +12,7 @@ const Travel = () => (
                     <h1 class="title-font font-medium text-8xl	 mb-2 text-gray-900 ">Ready To Explore The World?</h1>
                     <div class="leading-relaxed text-2xl redtitle">Here are some of the travel options we offer:</div>
                 </div>
-                <div class="relative p-4  mx-5">
+                <div class="relative p-4  mx-auto lg:mx-5 ">
                     <img
                         class="object-cover w-48 lg:w-48 ilg:w-64 "
                         src={Location1}
@@ -27,7 +27,7 @@ const Travel = () => (
                     </div>
                 </div>
 
-                <div class="relative p-4  mx-5">
+                <div class="relative p-4  mx-auto lg:mx-5">
                     <img
                         class="object-cover  w-48 lg:w-48 ilg:w-64 "
                         src={Location2}
@@ -40,7 +40,7 @@ const Travel = () => (
                         <p class="text-white text-sm lg:text-md ilg:text-lg mb-4 w-2/3 travelp">Get your adrenaline pumping with safaris, hiking trips, and whitewater rafting.</p>
                     </div>
                 </div>
-                <div class="relative p-4  mx-5">
+                <div class="relative p-4  mx-auto lg:mx-5">
                     <img
                         class="object-cover  w-48 lg:w-48 ilg:w-64 "
                         src={Location3}

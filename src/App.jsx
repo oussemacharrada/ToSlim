@@ -21,7 +21,7 @@ const App = () => (
         <Hero/>
 
         <div
-            className={`bg-primary bg-aboutus-pattern bg-no-repeat w-full w-[100vw] h-full z-0 object-cover ${styles.paddingX} ${styles.flexCenter}`}>
+            className={`bg-primary bg-aboutus-pattern bg-no-repeat w-full w-[100vw] h-full z-0 object-cover  ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
                 <AboutUs/>
                 <Events/>

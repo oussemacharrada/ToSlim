@@ -41,7 +41,7 @@ const FeatureCard = ({icon, title, content, index}) => (
 
 export const AboutUs = () => {
     return (
-        <section id="AboutUs" className={`${layout.section} mt-0 pt-0 `}>
+        <section id="AboutUs" className={`${layout.section} mt-0 pt-0 mt-5 ss:mt-32  lg:mt-5 `}>
 
             <div
                 class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 m-0">
@@ -60,8 +60,8 @@ export const AboutUs = () => {
                                 event anywhere in Tunisia and abroad.
                             </p>
                         </div>
-                        <div class="w-full md:w-1/2 px-4">
-                            <img src={aboutus} alt="responsive"></img>
+                        <div class="w-full md:w-1/2 px-4 ">
+                            <img src={aboutus} alt="responsive" className="mx-auto my-4"></img>
                         </div>
                     </div>
 

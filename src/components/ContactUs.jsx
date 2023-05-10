@@ -20,8 +20,9 @@ const ContactUs = () => (
         <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
 
             <div
-                className="lg:w-1/3 md:w-1/2  flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 mx-20">
-                <h2 className="text-black  mb-1  title-font text-2xl sm:h-text4xl lg:h-text-5xl ilg:text-6xl font-bold	  ">Get in
+                className="lg:w-1/3 md:w-1/2  flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 mx-0 sm:mx-20">
+                <h2
+                    className="text-black  mb-1  title-font text-2xl sm:h-text4xl lg:h-text-5xl ilg:text-6xl font-bold	  ">Get in
                     <span className="redtitle">Touch</span>
                 </h2>
                 <p className="leading-relaxed mb-5 paragraph3">Please feel free to get in touch
@@ -61,7 +62,7 @@ const ContactUs = () => (
 
                 <button
                     className="text-white  border-0 py-3 px-6 focus:outline-none hover:bg-red-800  text-lg submitBtn">Send</button>
-                <div className="flex flex-row md:mt-0 mt-10  ">
+                <div className="flex flex-row md:mt-0 mt-10 flex-wrap ss:flex-nowrap ">
                     <img
                         src={phonecontact}
                         alt="phonecontact"
@@ -100,11 +101,11 @@ const ContactUs = () => (
                         mice@keplertravel.tn</h6>
                 </div>
             </div>
-            <div className="w-full  lg:w-2/3 md:w-full  p-4 sm:mr-20 p-10     ">
-                <div
-                    className="flex flex-col justify-center items-center max-w-sm mx-auto my-8">
+            <div
+                className="w-full md:w-full h-full lg:w-full   p-4 mr-5 sm:mr-20 p-10     ">
+                <div className="flex flex-col justify-center items-center max-w-sm mx-auto ">
                     <div
-                            className={`bg-gray-300 h-120 w-full shadow-md bg-cover bg-blend-normal bg-center bg-maplocation-pattern imgeffect`}                            ></div>
+                        className={`bg-gray-300 h-[20rem] ss:h-[26.5rem] md:h-[30.5rem] lg:h-[32.4 rem] ilg:h-[36.2rem] xl:h-[38.7rem] w-[20rem] ss:w-[24rem] md:w-[28rem] lg:w-[22 rem] ilg:w-[25rem] xl:w-[28rem]  shadow-md bg-cover bg-blend-normal bg-center bg-maplocation-pattern imgeffect`}></div>
                     <div
                         className="w-80 md:w-80 bg-[#423F49] h-32  -mt-20 shadow-lg overflow-hidden px-1 pb-20	">
                         <div className="py-4  p-6">
