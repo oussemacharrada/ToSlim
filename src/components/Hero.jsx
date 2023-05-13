@@ -97,7 +97,7 @@ class Hero extends Component {
                         </div>
                         <div className="relative">
                             <Navbar/>
-                            <div className="max-w-[1080px] mx-auto">
+                            <div className="max-w-[1080px] mx-auto mb-32">
                                 <div className={`flex md:flex-row flex-col p-0 `}>
                                     <div className={`flex-1 flex md:my-0 my-5 relative`}></div>
                                     <div
@@ -106,14 +106,14 @@ class Hero extends Component {
                                             className="w-full h-full object-cover backdrop-blur-sm p-5 pl-10 block rounded-lg shadow-lg px-4 py-10 md:px-10  glassifedEffectBlur 	">
                                             <div className='flex flex-row justify-between items-center w-full'>
                                                 <h1
-                                                    className="flex-1 font-poppins font-semibold  ss:text-[2rem] text-[1.5rem]  text-white ss:leading-[2.1rem]   leading-[1.8rem]">
+                                                    className="flex-1 font-poppins font-semibold  ss:text-3xl text-2xl  text-white ss:leading-[2.1rem] my-5  leading-[1.8rem]">
                                                     Exciting Events Across All Tunisia With
                                                     <br/>{" "}
-                                                    <span className="text-gradient">Kepler!</span>{" "}
+                                                    <span className="text-gradient ss:text-5xl text-3xl py-5">Kepler!</span>{" "}
                                                 </h1>
                                             </div>
                                             <p
-                                                className={`${styles.paragraph} max-w-[570px] mt-5 ss:text-[1.9rem] ] text-[1.5rem] text-white ss:leading-[2.1rem] leading-[1.8rem]`}>
+                                                className={`${styles.paragraph} max-w-[570px] mt-5 ss:text-lg text-base text-white ss:leading-[1.7rem] leading-[1.4rem]`}>
                                                 Welcome to Kepler, your gateway to unforgettable travel experiences and exciting
                                                 events. Our travel agency is passionate about curating the perfect Event package
                                                 tailored to your interests.

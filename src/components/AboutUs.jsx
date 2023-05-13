@@ -15,7 +15,7 @@ import {Team} from "./../components";
 
 const FeatureCard = ({icon, title, content, index}) => (
     <div
-        className={`flex flex-row p-6 rounded-[20px] z-0 object-cover my-4 feature-card cardBack xs:h-auto ss:h-[300px] h-auto max-w-[525px]`}>
+        className={`flex flex-row p-6 rounded-[20px] z-0 object-cover my-4 feature-card cardBack xs:h-auto ss:h-[280px] h-auto max-w-[485px] `}>
         <div
             className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-red-800 text-gray-700`}>
             <img
@@ -28,7 +28,7 @@ const FeatureCard = ({icon, title, content, index}) => (
                 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
                 {title}
             </h4>
-            <p className="font-poppins font-normal text-white text-[16px] leading-[24px]">
+            <p className="font-poppins font-normal ss:text-base text-sm text-white ss:leading-[1.2rem] leading-[1rem]">
                 {content}
             </p>
             <div className="mt-auto">
@@ -74,7 +74,7 @@ export const AboutUs = () => {
 
                 </div>
                 <div
-                    className={`${layout.sectionImg} flex flex-wrap justify-evenly items-center w-full `}>
+                    className={`${layout.sectionImg} flex lg:flex-nowrap flex-wrap justify-evenly items-center w-full `}>
                     {features.map((feature, index) => (<FeatureCard key={feature.id} {...feature} index={index}/>))}
                 </div>
                 <div class="flex lg:flex-row w-full flex-col justify-between gap-8 pt-12">

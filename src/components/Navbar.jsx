@@ -10,20 +10,20 @@ const Navbar = () => {
         setToggle] = useState(false);
 
     return (
-        <nav className="w-full flex py-3 justify-evenly	 items-center navbar py-0 ">
+        <nav className="w-full flex py-3 justify-evenly	 items-center navbar py-0 my-5">
             <img
                 src={logo}
                 alt="hoobank"
-                className=" max-w-[50vw] max-h-[13vh]  xl:ml-[0vw] ilg:ml-[5vw] lg:ml-[8vw] md:ml-[14vw] ml-[5vw] mt-2"/>
+                className=" max-w-[50vw] max-h-[13vh] mt-5  xl:ml-[0vw] ilg:ml-[5vw] lg:ml-[8vw] md:ml-[14vw] ml-[5vw] mt-2"/>
 
             <ul
-                className="list-none sm:flex hidden justify-end items-center m-2   xl:ml-[0vw] ilg:ml-[5vw] lg:ml-[8vw] md:ml-[14vw] ml-[5vw]  flex-1 NavBarbg py-5 pr-10 xl:max-w-[40vw] lg:max-w-[50vw] md:max-w-[58vw] max-w-[60vw] max-h-[70px] 	">
+                className="list-none sm:flex hidden justify-end items-center m-2      xl:mr-20 ilg:mr-16 lg:mr-0 md:mr-0 mr-0 flex-1 NavBarbg py-5 pr-10 xl:max-w-3xl ilg:max-w-2xl lg:max-w-xl md:max-w-lg max-w-lg max-h-[70px] 	">
                 {navLinks.map((nav, index) => (
                     <li
                         key={nav.id}
                         className={`font-poppins font-normal cursor-pointer text-[18px] ${active === nav.title
-                        ? "text-white"
-                        : "text-dimWhite"} ${index === navLinks.length - 1
+                        ? "text-slate-200"
+                        : "text-white"} ${index === navLinks.length - 1
                             ? "mr-0"
                             : "mr-10"}`}
                         onClick={() => setActive(nav.title)}>

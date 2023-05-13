@@ -51,9 +51,7 @@ const App = () => (
             </div>
         </div>
         <div className={`bg-[#424147] ${styles.paddingX} ${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
                 <Footer/>
-            </div>
         </div>
 
     </div>

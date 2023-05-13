@@ -52,12 +52,13 @@ const ContactUs = () => (
                         className="w-full input rounded border border-gray-300 focus:border-red-800 focus:ring-2 focus:ring-red-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-500 ease-in-out"></input>
                 </div>
                 <div className="relative mb-4">
-                    <input
+                    <textarea
                         type="text"
                         id="how"
                         name="how"
+                        cols="50" rows="3" 
                         placeholder="How did you find us ? "
-                        className="w-full input rounded border border-gray-300 focus:border-red-800 focus:ring-2 focus:ring-red-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-500 ease-in-out"></input>
+                        className="w-full input rounded border border-gray-300 focus:border-red-800 focus:ring-2 focus:ring-red-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-500 ease-in-out"></textarea>
                 </div>
 
                 <button
@@ -68,7 +69,7 @@ const ContactUs = () => (
                         alt="phonecontact"
                         className={`w-6 h-6 mt-5 mx-2 rounded-lg object-contain `}/>
                     <h6
-                        className={`${styles.paragraph} mt-4 text-black text-sm text-300 font-medium `}>
+                        className={`${styles.paragraph} mt-4 text-black text-sm text-300 font-medium whitespace-nowrap  `}>
                         <span className="font-bold	">PHONE</span>
                         <br></br>
                         (+216) 79 29 75 38</h6>
@@ -111,7 +112,7 @@ const ContactUs = () => (
                         <div className="py-4  p-6">
                             <h1
                                 className="title-font whitetitle font-semibold text-white  tracking-widest text-lg  sm:h-text-xl ilg:text-2xl font-bold">Location<br></br>
-                                Found<span className="redtitle">
+                                Find <span className="redtitle">
                                     Kepler !</span>
                             </h1>
 

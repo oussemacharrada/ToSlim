@@ -20,9 +20,9 @@ const Travel = () => (
                     <div
                         class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
                         <h2
-                            class="text-white  text-xl lg:text-2xl ilg:text-3xl  font-bold mb-4 -ml-8 mt-5 ilg:-mt-5 traveltitle">Beach<br></br>
+                            class="text-white  text-xl lg:text-2xl ilg:text-3xl  font-bold mb-2 px-1 pt-10 -ml-8  ilg:-mt-5 traveltitle">Beach<br></br>
                             Getaways</h2>
-                        <p class="text-white text-sm lg:text-md ilg:text-lg mb-4 w-2/3 travelp">Relax on
+                        <p class="text-white text-sm lg:text-md ilg:text-lg mb-4 w-2/3 travelp py-3 px-1">Relax on
                             the white sands of the Caribbean or the turquoise waters of the Mediterranean.</p>
                     </div>
                 </div>
@@ -33,11 +33,11 @@ const Travel = () => (
                         src={Location2}
                         alt="Your image"></img>
                     <div
-                        class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+                        class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center ">
                         <h2
-                            class="text-white text-xl lg:text-2xl ilg:text-3xl font-bold mb-4  -ml-8 mt-5 ilg:-mt-5 traveltitle">Adventure<br></br>
+                            class="text-white text-xl lg:text-2xl ilg:text-3xl font-bold mb-2 px-1 pt-4 -ml-8  ilg:-mt-5 traveltitle">Adventure<br></br>
                             Travel</h2>
-                        <p class="text-white text-sm lg:text-md ilg:text-lg mb-4 w-2/3 travelp">Get your adrenaline pumping with safaris, hiking trips, and whitewater rafting.</p>
+                        <p class="text-white text-sm lg:text-md ilg:text-lg mb-4 w-2/3 travelp py-3 px-1">Get your adrenaline pumping with safaris, hiking trips, and whitewater rafting.</p>
                     </div>
                 </div>
                 <div class="relative p-4  mx-auto lg:mx-5">
@@ -48,9 +48,9 @@ const Travel = () => (
                     <div
                         class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
                         <h2
-                            class="text-white text-xl lg:text-2xl ilg:text-3xl font-bold mb-4 -ml-10 mt-3 ilg:-mt-8 traveltitle">Cultural<br></br>
+                            class="text-white text-xl lg:text-2xl ilg:text-3xl font-bold mb-2 px-1 pt-1 -ml-8  ilg:-mt-5 traveltitle">Cultural<br></br>
                             Tours</h2>
-                        <p class="text-white text-sm lg:text-md ilg:text-lg  mb-4 w-2/3 travelp">Immerse yourself in the history and culture of a new destination.</p>
+                        <p class="text-white text-sm lg:text-md ilg:text-lg  mb-4 w-2/3 travelp py-3 px-1">Immerse yourself in the history and culture of a new destination.</p>
                     </div>
                 </div>
             </div>

@@ -28,11 +28,11 @@ const Services = () => (
                 </div>
             </div>
             <div
-                class="flex flex-col flex-wrap sm:py-6 -mb-10 sm:w-1/2 sm:pl-12 sm:text-left text-center mb-[1.5rem]">
+                class="flex flex-col flex-wrap sm:py-6 -mb-10  sm:w-1/2  sm:mr-0 sm:pl-12 sm:text-left text-center mb-[1.5rem]">
                 <div class="flex flex-col mb-10 sm:items-start items-center">
 
                     <div class="flex-grow">
-                        <h2 class="text-gray-900 text-lg title-font font-medium redtitle">We Provide the Best
+                        <h2 class="text-gray-900 text-lg title-font font-medium redtitle ss:leading-[3.8rem] my-5  leading-[3.2rem]">We Provide the Best
                             <br></br>
                             <span className="blacktitle">Services</span>
                         </h2>
@@ -42,7 +42,7 @@ const Services = () => (
                 <div class="flex flex-col  sm:items-start items-center mb-[1.5rem] ">
                     <div class="flex-grow">
                         <div
-                            className="w-full sm:w-[24rem] md:w-[24rem] lg:w-[30.5rem]  ilg:w-[34rem] xl:w-[36rem] bg-[#99232F]    h-[18rem] sm:h-[18rem] lg:h-[15rem]   mr-10 ss:mr-0    shadow-lg overflow-hidden  pl-8">
+                            className="w-[22rem] sm:w-[24rem] md:w-[24rem] lg:w-[30.5rem]  ilg:w-[34rem] xl:w-[36rem] bg-[#99232F]    h-[18rem] sm:h-[18rem] lg:h-[15rem]       shadow-lg overflow-hidden  pl-8">
                             <div className="py-4  p-6">
                                 <h1 className="header1 pb-5 text-[#FFFFFF]">
                                     Operational marketing</h1>
@@ -55,10 +55,10 @@ const Services = () => (
                     </div>
                 </div>
                 <div
-                    class="flex flex-col  sm:items-start items-center mr-1 ss:mr-0 ml-1 ss: ml-1 sm:ml-12 md:ml-20 lg:ml-16 ilg:ml-24 xl:ml-16 mt-[1.5rem] shadow-lg bg-[#F4EDE5] ">
+                    class="flex flex-col  sm:items-start items-center mr-1  ss:mr-0 ml-1 ss: ml-1 sm:ml-12 md:ml-20 lg:ml-16 ilg:ml-24 xl:ml-16 mt-[1.5rem] shadow-lg bg-[#F4EDE5] ">
                     <div class="flex-grow">
                         <div
-                            className="w-full sm:w-[24rem] md:w-[24rem] lg:w-[30.5rem]  ilg:w-[34rem] xl:w-[36rem]    h-[18rem] sm:h-[18rem] lg:h-[15rem]    overflow-hidden  pl-8	">
+                            className="w-[22rem] sm:w-[24rem] md:w-[24rem] lg:w-[30.5rem]  ilg:w-[34rem] xl:w-[36rem]    h-[18rem] sm:h-[18rem] lg:h-[15rem]    overflow-hidden  pl-8	">
                             <div className="py-4  p-6">
                                 <h1 className="header1 text-[#8B8B8B]">
                                     Team Building</h1>
