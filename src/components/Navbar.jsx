@@ -32,20 +32,22 @@ const Navbar = () => {
                 ))}
             </ul>
 
-            <div className="sm:hidden flex flex-1 justify-end items-center">
+            <div className="sm:hidden flex flex-col md:flex-row justify-end items-center ">
+            <div class="flex items-center mx-5 py-5 md:py-0">
+</div>
                 <img
                     src={toggle
                     ? close
                     : menu}
                     alt="menu"
-                    className="w-[28px] h-[28px] object-contain"
+                    className="w-[28px] h-[28px] object-contain ml-48"
                     onClick={() => setToggle(!toggle)}/>
-
+ 
                 <div
                     className={`${ !toggle
                     ? "hidden"
-                    : "flex"} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-                    <ul className="list-none flex justify-end items-start flex-1 flex-col">
+                    : "flex"} md:flex md:flex-grow bg-black-gradient p-6 rounded-xl`}>
+                    <ul className="ltext-lg md:flex md:ml-auto">
                         {navLinks.map((nav, index) => (
                             <li
                                 key={nav.id}
@@ -55,7 +57,7 @@ const Navbar = () => {
                                     ? "mb-0"
                                     : "mb-4"}`}
                                 onClick={() => setActive(nav.title)}>
-                                <a href={`#${nav.id}`}>{nav.title}</a>
+                                <a href={`#${nav.id} w-full md:w-auto p-5 inline-block bg-blue-800 border-b-4 border-white hover:border-white hover:bg-blue-800`}>{nav.title}</a>
                             </li>
                         ))}
                     </ul>

@@ -63,7 +63,7 @@ const ContactUs = () => (
 
                 <button
                     className="text-white  border-0 py-3 px-6 focus:outline-none hover:bg-red-800  text-lg submitBtn">Send</button>
-                <div className="flex flex-row md:mt-0 mt-10 flex-wrap ss:flex-nowrap ">
+                <div className="flex xs:flex-row flex-col md:mt-0 mt-10 flex-wrap ss:flex-nowrap ">
                     <img
                         src={phonecontact}
                         alt="phonecontact"
