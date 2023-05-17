@@ -2,7 +2,7 @@ import styles from "../style";
 import {TRAVELBAG, Location1, Location2, Location3} from "../assets";
 const Travel = () => (
     <section
-        id="clients"
+        id="Travel"
         className={`${styles.paddingY} ${styles.flexCenter} text-gray-600 body-font relative flex-col relative `}>
 
         <div class="container px-5 py-24 mx-auto flex flex-wrap min-h-[100vh]">

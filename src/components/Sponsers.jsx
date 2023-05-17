@@ -11,7 +11,7 @@ import {
 } from "../assets";
 const Sponsers = () => (
     <section className={`${styles.flexCenter} my-4`}>
-        <div className={`${styles.flexCenter} flex-wrap w-full`}>
+        <div className={`${styles.flexCenter} flex-wrap w-full bg-black rounded-lg bg-opacity-30		 `}>
             {clients.map((client) => (
                 <div
                     key={client.id}

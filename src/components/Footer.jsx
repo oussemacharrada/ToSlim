@@ -5,30 +5,35 @@ import {footerLinks, socialMedia} from "../constants";
 const Footer = () => (
     <section className={`${styles.flexCenter} mt-0 mb-0  flex-col`}>
         <div className={`flex md:flex-row flex-col 	 	 w-full `}>
-            <div className="flex-[1] md:w-1/5 w-full flex flex-col flex-wrap justify-end    lg:mt-20 md:mt-48 lg:mt-14 ">
+            <div className="flex-[1]  flex flex-col flex-wrap justify-center       ">
                 <img src={whitelogo} alt="Kepler" className="w-64  object-contain"/>
            
             </div>
           
             <div
-                className="w-3/5 flex flex-row  flex-wrap   ">
-                <div className=" flex flex-col justify-end md:ml-80 ml-0 mb-10    ">
+                className="flex-[2]     flex flex-row  flex-wrap    ">
+                <div className=" flex flex-col md:justify-end  justify-center md:mr-32 ml-0 mb-10    ">
                 <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
                     Follow Us :
                 </p>
-                <div className="flex flex-row mt-2   ">
-                    {socialMedia.map((social, index) => (<img
-                        key={social.id}
-                        src={social.icon}
-                        alt={social.id}
-                        className={`w-[30px] h-[30px] rounded-lg object-contain cursor-pointer ${index !== socialMedia.length - 1
-                        ? "mr-6"
-                        : "mr-0"} border-2 p-2 border-white icontran `}
-                        onClick={() => window.open(social.link)}/>))}
+                <div className="flex flex-col  mt-2   ">
+           
+  {socialMedia.map((social, index) => (
+    <div  className="flex flex-row " key={social.id}>
+      <img
+        src={social.icon}
+        alt={social.id}
+        className={`w-[30px] h-[30px] rounded-lg object-contain cursor-pointer my-2 mr-4 border-2 p-2 border-white icontran `}
+        onClick={() => window.open(social.link)}
+      />
+      <a href={social.link} className={`${styles.paragraph} mt-1.5 max-w-[312px]`}>{social.name}</a>
+    </div>
+  ))}
+  
                 </div>
                 </div>
                 </div>
-                <div className=" flex flex-col   md:w-1/5 w-full">
+                <div className=" flex-[1] flex flex-col  ">
                     <h6 className={`${styles.paragraph} mt-4 `}>Our Company :</h6>
                     <img
                         src={maps}

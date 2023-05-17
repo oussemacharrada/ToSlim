@@ -8,7 +8,8 @@ import {
     Team4,
     Team5,
     Team6,
-    Team1
+    Team1,
+    team7
 } from "../assets";
 const Team = () => (
     <div class="flex lg:flex-nowrap flex-wrap mt-10">
@@ -104,7 +105,7 @@ const Team = () => (
                 <div class="text-center mt-6">
                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                     Ahmed Ben Rached
-| Event Manager                    </h1>
+                   </h1>
 
                     <div class="text-gray-700 font-light mb-2">
                     | Event Manager                    </div>
@@ -117,16 +118,37 @@ const Team = () => (
                 <a href="#" class="mx-auto">
                     <img
                         class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                        src={Team6}></img>
+                        src={Team5}></img>
                 </a>
 
                 <div class="text-center mt-6">
                     <h1 class="text-gray-900 text-xl font-bold mb-1">
-                    Jihena Dridi                    </h1>
+                    Ahmed Ben Rached
+                   </h1>
+
+                    <div class="text-gray-700 font-light mb-2">
+                    | Event Manager                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-6/12 lg:w-[11.5rem] mb-6 px-6 sm:px-6 lg:px-2">
+            <div class="flex flex-col">
+                <a href="#" class="mx-auto">
+                    <img
+                        class="rounded-2xl drop-s   hadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                        src={team7}></img>
+                </a>
+
+                <div class="text-center mt-6">
+                    <h1 class="text-gray-900 text-xl font-bold mb-1">
+                    Khadija Ben Rached 
+
+</h1>
 
                     <div class="text-gray-700 font-light mb-2">
                    
-| Reservation and    Ticketing Manager                    </div>
+|Event Coordinator                    </div>
 
                 </div>
             </div>

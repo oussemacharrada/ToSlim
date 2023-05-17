@@ -64,8 +64,9 @@ import phonecontact from "./phonecontact.png"
 import facebookcont from "./facebookcont.png"
 import instagramcont from "./instagramcont.png"
 import emailcont from "./emailcont.png"
+import team7 from "./team7.png"
 
-export {
+export {team7,
     emailcont,
     instagramcont,
     facebookcont,

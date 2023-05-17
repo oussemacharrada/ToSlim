@@ -160,17 +160,20 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "ttps://instagram.com/keplertravel?igshid=NTc4MTIwNjQ2YQ==",
+    link: "https://instagram.com/keplertravel?igshid=NTc4MTIwNjQ2YQ==",
+    name: "keplertravel",
   },
   {
     id: "social-media-2",
     icon: facebook,
     link: "https://www.facebook.com/profile.php?id=100075745255608",
+    name: "Kepler Travel Services",
   },
   {
     id: "social-media-3",
     icon: linkedin,
     link: "https://www.linkedin.com/company/kepler-travel-services/?viewAsMember=true",
+    name: "Kepler Travel Services",
   },
 ];
 

@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Events = () => (
   
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font" id="Events">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
       <h1 class="sm:text-5xl text-3xl font-medium title-font mb-2 whiteheader">Looking for exciting B2B events? </h1><br></br>
